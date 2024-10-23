@@ -9,7 +9,6 @@ Antes de iniciar, certifique-se de ter o seguinte instalado:
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-## Estrutura de Arquivos
 Certifique-se de que a estrutura de arquivos do seu projeto seja semelhante ao seguinte:
 
 ```
@@ -22,7 +21,6 @@ Certifique-se de que a estrutura de arquivos do seu projeto seja semelhante ao s
 └── ... (outros arquivos do projeto)
 ```
 
-## Como Construir e Executar os Serviços
 
 ### Passo 1: Buildar e Executar com Docker Compose
 Para construir as imagens e rodar os contêineres, use o Docker Compose:
@@ -64,6 +62,13 @@ O arquivo `docker-compose.yml` define os seguintes serviços:
 - **backend**: Serviço que utiliza `json-server` para fornecer uma API simulada dos eventos.
   - Porta exposta: `3000`.
 
+## Imagens Docker Publicadas
+
+As imagens Docker do frontend e backend estão disponíveis nos links abaixo:
+
+- **Frontend**: [gsfsouzafonseca/casa-de-eventos-front](https://hub.docker.com/r/gsfsouzafonseca/casa-de-eventos-front)
+- **Backend**: [gsfsouzafonseca/casa-de-eventos-back](https://hub.docker.com/r/gsfsouzafonseca/casa-de-eventos-back)
+
 ## Exemplos de Uso
 - **Frontend**: Acesse `http://localhost:8080` para visualizar a aplicação de eventos.
 - **Backend**: Acesse `http://localhost:3000/eventos` para visualizar os dados dos eventos fornecidos pelo `json-server`.
@@ -77,3 +82,4 @@ O arquivo `docker-compose.yml` define os seguintes serviços:
 
 ## Conclusão
 Esta documentação fornece as etapas necessárias para construir, executar e usar a aplicação `Casa de Eventos`. Se tiver qualquer dúvida ou problema, sinta-se à vontade para pedir ajuda.
+
